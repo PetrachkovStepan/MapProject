@@ -5,7 +5,7 @@ import RadiusBar from "src/components/SideScrollMenu/RadiusBar";
 
 function SearchPage() {
     return (
-        <div  className = "h-screen bg-white flex flex-col px-[25px] pt-[25px] overflow-auto no-scrollbar">
+        <div  className = "relative h-screen bg-white flex flex-col px-[25px] pt-[25px] overflow-auto no-scrollbar">
             <div >
                 <SearchBar></SearchBar>
                 <div className="mt-[30px] text-[20px] text-dark-grey md-[10px]">Искать:</div>
