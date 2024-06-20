@@ -1,0 +1,385 @@
+[2m> [22mwebpack-cli serve --node-env=development
+
+<i> [webpack-dev-server] Project is running at:
+<i> [webpack-dev-server] Loopback: [36mhttp://localhost:4200/[39m
+<i> [webpack-dev-server] On Your Network (IPv4): [36mhttp://192.168.0.101:4200/[39m
+<i> [webpack-dev-server] Content not from webpack is served from '[36mD:\Практика\PractiseTestTaskModsen\org\public[39m' directory
+[BABEL] Note: The code generator has deoptimised the styling of D:\Практика\PractiseTestTaskModsen\org\src\assets\nature.svg as it exceeds the max of 500KB.
+[BABEL] Note: The code generator has deoptimised the styling of undefined as it exceeds the max of 500KB.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 2.32 MiB (3.63 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mvendor.js[39m[22m 1.58 MiB [1m[32mmain.js[39m[22m 716 KiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 251 KiB (393 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB 3 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (69cc3414b27c3cfb)
+[31m[1mERROR[22m[39m in [1m./src/main.tsx[22m:[32m[1m13:5[22m[39m
+[90mTS2322: [39mType '{ children: Element; router: Router; }' is not assignable to type 'IntrinsicAttributes & RouterProviderProps'.
+  Property 'children' does not exist on type 'IntrinsicAttributes & RouterProviderProps'.
+  [0m [90m 11 |[39m root[33m.[39mrender(
+   [90m 12 |[39m   [33m<[39m[33mStrictMode[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 13 |[39m    [33m<[39m[33mRouterProvider[39m router[33m=[39m{router}[33m>[39m[33m<[39m[33m/[39m[33mRouterProvider[39m[33m>[39m
+   [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 14 |[39m   [33m<[39m[33m/[39m[33mStrictMode[39m[33m>[39m
+   [90m 15 |[39m )[33m;[39m
+   [90m 16 |[39m[0m
+
+Found [31m[1m1 error[22m[39m in 3427 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.02 MiB (4.33 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.69cc3414b27c3cfb.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.58 MiB [1m[32mmain.js[39m[22m 716 KiB [1m[32mmain.69cc3414b27c3cfb.hot-update.js[39m[22m 716 KiB 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.69cc3414b27c3cfb.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.69cc3414b27c3cfb.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.69cc3414b27c3cfb.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.69cc3414b27c3cfb.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.69cc3414b27c3cfb.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (471118b925abdda1)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 1.71 MiB (2.36 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.471118b925abdda1.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.58 MiB [1m[32mmain.js[39m[22m 41.9 KiB [1m[32mmain.471118b925abdda1.hot-update.js[39m[22m 41.6 KiB 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.471118b925abdda1.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.471118b925abdda1.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.471118b925abdda1.hot-update.js[39m[22m (main) 38.5 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.471118b925abdda1.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.471118b925abdda1.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c9bea7fbf40662ef)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.02 MiB (4.33 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.c9bea7fbf40662ef.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.58 MiB [1m[32mmain.js[39m[22m 716 KiB [1m[32mmain.c9bea7fbf40662ef.hot-update.js[39m[22m 716 KiB 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.c9bea7fbf40662ef.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.c9bea7fbf40662ef.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.c9bea7fbf40662ef.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.c9bea7fbf40662ef.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.c9bea7fbf40662ef.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4e721aea526aec77)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.02 MiB (4.33 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.4e721aea526aec77.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.58 MiB [1m[32mmain.js[39m[22m 716 KiB [1m[32mmain.4e721aea526aec77.hot-update.js[39m[22m 715 KiB 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.4e721aea526aec77.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.4e721aea526aec77.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.4e721aea526aec77.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4e721aea526aec77.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.4e721aea526aec77.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4d1a231457921de7)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.02 MiB (4.33 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.4d1a231457921de7.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.58 MiB [1m[32mmain.js[39m[22m 716 KiB [1m[32mmain.4d1a231457921de7.hot-update.js[39m[22m 715 KiB 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.4d1a231457921de7.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.4d1a231457921de7.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.4d1a231457921de7.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.4d1a231457921de7.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.4d1a231457921de7.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (08042ec2427cab15)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m (main) 37 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/pages/Layout.tsx[39m[22m
+Module build failed (from ./node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: D:\Практика\PractiseTestTaskModsen\org\src\pages\Layout.tsx: Unexpected token (15:8)
+
+[0m [90m 13 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+ [90m 14 |[39m         [33m<[39m
+[31m[1m>[22m[39m[90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 17 |[39m     )[33m;[39m
+ [90m 18 |[39m   }[0m
+    at constructor (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:351:19)
+    at TypeScriptParserMixin.raise (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3233:19)
+    at TypeScriptParserMixin.unexpected (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3253:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6586:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6593:23)
+    at TypeScriptParserMixin.jsxParseElementName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6602:21)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6678:22)
+    at TypeScriptParserMixin.jsxParseElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6703:33)
+    at TypeScriptParserMixin.jsxParseElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6715:32)
+    at TypeScriptParserMixin.jsxParseElement (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6766:17)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6776:19)
+    at TypeScriptParserMixin.parseExprSubscripts (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10568:23)
+    at TypeScriptParserMixin.parseUpdate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10551:21)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10529:23)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9430:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10383:61)
+    at TypeScriptParserMixin.parseExprOps (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10388:23)
+    at TypeScriptParserMixin.parseMaybeConditional (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10365:23)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10326:21)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9368:39
+    at TypeScriptParserMixin.tryParse (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3564:20)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9368:18)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10296:39
+    at TypeScriptParserMixin.allowInAnd (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11920:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10296:17)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11177:28)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10835:23)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6781:20)
+    at TypeScriptParserMixin.parseExprSubscripts (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10568:23)
+    at TypeScriptParserMixin.parseUpdate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10551:21)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10529:23)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9430:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10383:61)
+    at TypeScriptParserMixin.parseExprOps (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10388:23)
+    at TypeScriptParserMixin.parseMaybeConditional (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10365:23)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10326:21)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9379:20)
+    at TypeScriptParserMixin.parseExpressionBase (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10280:23)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10276:39
+    at TypeScriptParserMixin.allowInAnd (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11915:16)
+    at TypeScriptParserMixin.parseExpression (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10276:17)
+    at TypeScriptParserMixin.parseReturnStatement (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12603:28)
+    at TypeScriptParserMixin.parseStatementContent (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12254:21)
+    at TypeScriptParserMixin.parseStatementContent (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9104:18)
+    at TypeScriptParserMixin.parseStatementLike (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12223:17)
+    at TypeScriptParserMixin.parseStatementListItem (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12203:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12780:61)
+    at TypeScriptParserMixin.parseBlockBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12773:10)
+    at TypeScriptParserMixin.parseBlock (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12761:10)
+    at TypeScriptParserMixin.parseFunctionBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11600:24)
+
+webpack compiled with [1m[31m1 error[39m[22m (c0435879557dd208)
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m15:10[22m[39m
+[90mTS2749: [39m'MapComp' refers to a value, but is being used as a type here. Did you mean 'typeof MapComp'?
+  [0m [90m 13 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+   [90m 14 |[39m         [33m<[39m
+  [31m[1m>[22m[39m[90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+   [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 17 |[39m     )[33m;[39m
+   [90m 18 |[39m   }[0m
+
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m16:9[22m[39m
+[90mTS2304: [39mCannot find name 'div'.
+  [0m [90m 14 |[39m         [33m<[39m
+   [90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 17 |[39m     )[33m;[39m
+   [90m 18 |[39m   }
+   [90m 19 |[39m   [0m
+
+Found [31m[1m2 errors[22m[39m in 114 ms.
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m (main) 37 KiB [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/pages/Layout.tsx[39m[22m
+Module build failed (from ./node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: D:\Практика\PractiseTestTaskModsen\org\src\pages\Layout.tsx: Unexpected token (15:18)
+
+[0m [90m 13 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+ [90m 14 |[39m         [33m<[39m[33mOut[39m
+[31m[1m>[22m[39m[90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+ [90m    |[39m                   [31m[1m^[22m[39m
+ [90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 17 |[39m     )[33m;[39m
+ [90m 18 |[39m   }[0m
+    at constructor (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:351:19)
+    at TypeScriptParserMixin.raise (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3233:19)
+    at TypeScriptParserMixin.unexpected (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3253:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6586:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6593:23)
+    at TypeScriptParserMixin.jsxParseAttribute (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6669:22)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6684:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9632:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6679:17)
+    at TypeScriptParserMixin.jsxParseElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6703:33)
+    at TypeScriptParserMixin.jsxParseElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6715:32)
+    at TypeScriptParserMixin.jsxParseElement (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6766:17)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6776:19)
+    at TypeScriptParserMixin.parseExprSubscripts (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10568:23)
+    at TypeScriptParserMixin.parseUpdate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10551:21)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10529:23)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9430:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10383:61)
+    at TypeScriptParserMixin.parseExprOps (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10388:23)
+    at TypeScriptParserMixin.parseMaybeConditional (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10365:23)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10326:21)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9368:39
+    at TypeScriptParserMixin.tryParse (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3564:20)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9368:18)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10296:39
+    at TypeScriptParserMixin.allowInAnd (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11920:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10296:17)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11177:28)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10835:23)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6781:20)
+    at TypeScriptParserMixin.parseExprSubscripts (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10568:23)
+    at TypeScriptParserMixin.parseUpdate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10551:21)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10529:23)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9430:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10383:61)
+    at TypeScriptParserMixin.parseExprOps (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10388:23)
+    at TypeScriptParserMixin.parseMaybeConditional (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10365:23)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10326:21)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9379:20)
+    at TypeScriptParserMixin.parseExpressionBase (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10280:23)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10276:39
+    at TypeScriptParserMixin.allowInAnd (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11915:16)
+    at TypeScriptParserMixin.parseExpression (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10276:17)
+    at TypeScriptParserMixin.parseReturnStatement (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12603:28)
+    at TypeScriptParserMixin.parseStatementContent (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12254:21)
+    at TypeScriptParserMixin.parseStatementContent (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9104:18)
+    at TypeScriptParserMixin.parseStatementLike (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12223:17)
+    at TypeScriptParserMixin.parseStatementListItem (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12203:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12780:61)
+    at TypeScriptParserMixin.parseBlockBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12773:10)
+
+webpack compiled with [1m[31m1 error[39m[22m (d56e49f8078e158f)
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m14:10[22m[39m
+[90mTS2304: [39mCannot find name 'Out'.
+  [0m [90m 12 |[39m         {[90m/* <PlacePage></PlacePage> */[39m}
+   [90m 13 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+  [31m[1m>[22m[39m[90m 14 |[39m         [33m<[39m[33mOut[39m
+   [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+   [90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 17 |[39m     )[33m;[39m[0m
+
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m15:10[22m[39m
+[90mTS2749: [39m'MapComp' refers to a value, but is being used as a type here. Did you mean 'typeof MapComp'?
+  [0m [90m 13 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+   [90m 14 |[39m         [33m<[39m[33mOut[39m
+  [31m[1m>[22m[39m[90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+   [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 17 |[39m     )[33m;[39m
+   [90m 18 |[39m   }[0m
+
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m16:9[22m[39m
+[90mTS2304: [39mCannot find name 'div'.
+  [0m [90m 14 |[39m         [33m<[39m[33mOut[39m
+   [90m 15 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 16 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 17 |[39m     )[33m;[39m
+   [90m 18 |[39m   }
+   [90m 19 |[39m   [0m
+
+Found [31m[1m3 errors[22m[39m in 97 ms.
+Entrypoint [1mmain[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m 12 auxiliary assets
+Entrypoint [1mstyles[39m[22m = [1m[32mruntime.js[39m[22m [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m [1m[32mstyles.css[39m[22m [1m[32mstyles.js[39m[22m [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m (main) 37 KiB [1m[33m[initial][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/pages/Layout.tsx[39m[22m
+Module build failed (from ./node_modules/@nx/webpack/src/utils/web-babel-loader.js):
+SyntaxError: D:\Практика\PractiseTestTaskModsen\org\src\pages\Layout.tsx: Unexpected token (16:18)
+
+[0m [90m 14 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+ [90m 15 |[39m         [33m<[39m[33mOutlet[39m
+[31m[1m>[22m[39m[90m 16 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+ [90m    |[39m                   [31m[1m^[22m[39m
+ [90m 17 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 18 |[39m     )[33m;[39m
+ [90m 19 |[39m   }[0m
+    at constructor (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:351:19)
+    at TypeScriptParserMixin.raise (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3233:19)
+    at TypeScriptParserMixin.unexpected (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3253:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6586:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6593:23)
+    at TypeScriptParserMixin.jsxParseAttribute (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6669:22)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6684:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9632:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6679:17)
+    at TypeScriptParserMixin.jsxParseElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6703:33)
+    at TypeScriptParserMixin.jsxParseElementAt (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6715:32)
+    at TypeScriptParserMixin.jsxParseElement (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6766:17)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6776:19)
+    at TypeScriptParserMixin.parseExprSubscripts (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10568:23)
+    at TypeScriptParserMixin.parseUpdate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10551:21)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10529:23)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9430:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10383:61)
+    at TypeScriptParserMixin.parseExprOps (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10388:23)
+    at TypeScriptParserMixin.parseMaybeConditional (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10365:23)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10326:21)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9368:39
+    at TypeScriptParserMixin.tryParse (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:3564:20)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9368:18)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10296:39
+    at TypeScriptParserMixin.allowInAnd (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11920:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10296:17)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11177:28)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10835:23)
+    at TypeScriptParserMixin.parseExprAtom (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:6781:20)
+    at TypeScriptParserMixin.parseExprSubscripts (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10568:23)
+    at TypeScriptParserMixin.parseUpdate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10551:21)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10529:23)
+    at TypeScriptParserMixin.parseMaybeUnary (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9430:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10383:61)
+    at TypeScriptParserMixin.parseExprOps (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10388:23)
+    at TypeScriptParserMixin.parseMaybeConditional (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10365:23)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10326:21)
+    at TypeScriptParserMixin.parseMaybeAssign (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9379:20)
+    at TypeScriptParserMixin.parseExpressionBase (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10280:23)
+    at D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10276:39
+    at TypeScriptParserMixin.allowInAnd (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:11915:16)
+    at TypeScriptParserMixin.parseExpression (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:10276:17)
+    at TypeScriptParserMixin.parseReturnStatement (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12603:28)
+    at TypeScriptParserMixin.parseStatementContent (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12254:21)
+    at TypeScriptParserMixin.parseStatementContent (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:9104:18)
+    at TypeScriptParserMixin.parseStatementLike (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12223:17)
+    at TypeScriptParserMixin.parseStatementListItem (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12203:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12780:61)
+    at TypeScriptParserMixin.parseBlockBody (D:\Практика\PractiseTestTaskModsen\org\node_modules\@babel\parser\lib\index.js:12773:10)
+
+webpack compiled with [1m[31m1 error[39m[22m (52998325c1c5ca6b)
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m16:10[22m[39m
+[90mTS2558: [39mExpected 0 type arguments, but got 1.
+  [0m [90m 14 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+   [90m 15 |[39m         [33m<[39m[33mOutlet[39m
+  [31m[1m>[22m[39m[90m 16 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+   [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 17 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 18 |[39m     )[33m;[39m
+   [90m 19 |[39m   }[0m
+
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m16:10[22m[39m
+[90mTS2749: [39m'MapComp' refers to a value, but is being used as a type here. Did you mean 'typeof MapComp'?
+  [0m [90m 14 |[39m         {[90m/* <SearchPage></SearchPage> */[39m}
+   [90m 15 |[39m         [33m<[39m[33mOutlet[39m
+  [31m[1m>[22m[39m[90m 16 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+   [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 17 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m 18 |[39m     )[33m;[39m
+   [90m 19 |[39m   }[0m
+
+[31m[1mERROR[22m[39m in [1m./src/pages/Layout.tsx[22m:[32m[1m17:9[22m[39m
+[90mTS2304: [39mCannot find name 'div'.
+  [0m [90m 15 |[39m         [33m<[39m[33mOutlet[39m
+   [90m 16 |[39m         [33m<[39m[33mMapComp[39m [33m>[39m[33m<[39m[33m/[39m[33mMapComp[39m[33m>[39m
+  [31m[1m>[22m[39m[90m 17 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+   [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 18 |[39m     )[33m;[39m
+   [90m 19 |[39m   }
+   [90m 20 |[39m   [0m
+
+Found [31m[1m3 errors[22m[39m in 100 ms.
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.34 MiB (4.92 MiB) = 6 assets 15 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.08042ec2427cab15.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.08042ec2427cab15.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.08042ec2427cab15.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m, [1m[32mvendor.08042ec2427cab15.hot-update.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d3c529619abbe951)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.04 MiB (4.33 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.d3c529619abbe951.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.6 MiB [1m[32mmain.js[39m[22m 716 KiB [1m[32mmain.d3c529619abbe951.hot-update.js[39m[22m 716 KiB 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.d3c529619abbe951.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.d3c529619abbe951.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.d3c529619abbe951.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.d3c529619abbe951.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.d3c529619abbe951.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f59d1bf03866f49c)
+[32mNo errors found.[39m
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 3.05 MiB (4.33 MiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.f59d1bf03866f49c.hot-update.js[39m[22m 354 bytes [1m[32mvendor.js[39m[22m 1.6 MiB [1m[32mmain.js[39m[22m 716 KiB [1m[32mmain.f59d1bf03866f49c.hot-update.js[39m[22m 716 KiB 14 auxiliary assets
+Entrypoint [1mstyles[39m[22m [1m[33m[big][39m[22m 252 KiB (394 KiB) = [1m[32mruntime.js[39m[22m 48.9 KiB [1m[32mruntime.f59d1bf03866f49c.hot-update.js[39m[22m 354 bytes [1m[32mstyles.css[39m[22m 15.4 KiB [1m[32mstyles.js[39m[22m 187 KiB [1m[32mstyles.f59d1bf03866f49c.hot-update.js[39m[22m 522 bytes 5 auxiliary assets
+chunk (runtime: runtime) [1m[32mmain.js[39m[22m, [1m[32mmain.f59d1bf03866f49c.hot-update.js[39m[22m (main) 712 KiB [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mruntime.js[39m[22m, [1m[32mruntime.f59d1bf03866f49c.hot-update.js[39m[22m (runtime) 32.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m, [1m[32mstyles.f59d1bf03866f49c.hot-update.js[39m[22m (styles) 180 KiB (javascript) 15.4 KiB (css/mini-extract) [1m[33m[initial][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: runtime) [1m[32mvendor.js[39m[22m (vendor) (id hint: vendor) 1.57 MiB [1m[33m[initial][39m[22m [1m[33msplit chunk (cache group: vendor) (name: vendor)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (437f80932c9409ab)
+[32mNo errors found.[39m
+^C
