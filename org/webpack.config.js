@@ -1,5 +1,6 @@
 const { NxAppWebpackPlugin } = require('@nx/webpack/app-plugin');
 const { NxReactWebpackPlugin } = require('@nx/react/webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { join } = require('path');
 
 module.exports = {
@@ -10,6 +11,11 @@ module.exports = {
   devServer: {
     port: 4200,
     historyApiFallback: true,
+  },
+  resolve:  {
+    plugins: [new TsconfigPathsPlugin({    
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+    })],
   },
   plugins: [
     new NxAppWebpackPlugin({

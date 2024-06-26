@@ -12,13 +12,32 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {},
+    // "baseUrl": ".",
+    // "paths": {},
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true
+    "strict": true,
+    // Добавляем директорию откуда будут строиться пути
+    "baseUrl": ".",
+    // Добавляем алиасы для путей
+    "paths": {
+      "@/*": ["src*"],
+      "@assets/*": ["src/assets/*"],
+      "@tags/*": ["src/assets/TagImages/*"],
+      "@map/*": ["src/components/MapComp/*"],
+      "@sidebars/*": ["src/components/SideScrollMenu/InputBars/*"],
+      "@sidebuttons/*": ["src/components/SideScrollMenu/Buttons/*"],
+      "@sidelists/*": ["src/components/SideScrollMenu/Lists/*"],
+      "@aside/*": ["src/components/Aside/*"],
+      "@pages/*": ["src/pages/*"],
+  
+      "@routes/*": ["src/Routes/*"],
+      "@stores/*": ["src/store/*"],
+      "@utils/*": ["src/utils/*"],
+  
+    }
   },
   "files": [],
   "include": [],
@@ -31,5 +50,7 @@
     }
   ],
   "compileOnSave": false,
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+
+  
 }

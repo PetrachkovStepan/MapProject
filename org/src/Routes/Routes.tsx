@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "src/app/app";
-import AuthPage from "src/pages/AuthPage";
-import NotesPage from "src/pages/NotesPage";
-import PlacePage from "src/pages/PlacePage";
-import SearchPage from "src/pages/SearchPage";
+import AuthPage from "@pages/AuthPage";
+import NotesPage from "@pages/NotesPage";
+import PlacePage from "@pages/PlacePage";
+import SearchPage from "@pages/SearchPage";
 
 export const router = createBrowserRouter([
     {

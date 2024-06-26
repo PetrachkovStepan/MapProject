@@ -1,5 +1,5 @@
-import noteImg from "../../assets/Note.svg"
-import arrowImg from "../../assets/Arrow.svg"
+import noteImg from "@assets/Note.svg"
+import arrowImg from "@assets/Arrow.svg"
 import { Link } from "react-router-dom";
 
 const Note = () => {
@@ -7,7 +7,7 @@ const Note = () => {
     <div className=" flex flex-col h-[231px] max-w-[350px] border-[3px] rounded-[10px] mb-[20px] p-[20px] border-grey">
       <Link to={"/place"}>
         <div className="flex sm:items-center flex-col sm:flex-row">
-            <div className="h-[99px] sm:w-[120px] rounded-[10px] bg-dark-grey"></div>
+            <div className="h-[99px] sm:w-[120px] rounded-[10px] bg-dark-grey"/>
             
             <div className="flex items-center mt-[10px] sm:w-[160px]">
               <div className="h-[50px] sm:ml-[16px] text-[14] sm:text-[16px] flex flex-wrap text-clip">Нереальнейший городской парк</div>
@@ -19,9 +19,9 @@ const Note = () => {
         </div>
       </Link>
         <div className="flex items-center justify-between mt-[10px] sm:mt-[20px]">
-            <img src={noteImg} className="h-[20px] w-[15px]"></img>
+            <img src={noteImg} className="h-[20px] w-[15px]"/>
             <Link to={"/place"}>
-              <img src={arrowImg}></img>
+              <img src={arrowImg}/>
             </Link>
         </div>
     </div>
