@@ -19,7 +19,7 @@ const Note = () => {
         </div>
       </Link>
         <div className="flex items-center justify-between mt-[10px] sm:mt-[20px]">
-            <img src={noteImg} className="h-[20px] w-[15px]"/>
+            <img src={noteImg} alt="" className="h-[20px] w-[15px]"/>
             <Link to={"/place"}>
               <img src={arrowImg}/>
             </Link>

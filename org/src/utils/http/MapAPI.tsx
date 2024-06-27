@@ -1,16 +1,19 @@
 import axios from "axios";
 
-const apiKey = process.env.REACT_APP_API_URL;
 
-
-const URL ="https://api.opentripmap.com/0.1/"
-const API_KEY ="5ae2e3f221c38a28845f05b64e1da5c77d52a0c0fb4ead7360e4eb9b"
+const URL = process.env.REACT_APP_API_URL
+const API_KEY = process.env.REACT_APP_API_KEY
 
 export const getPlaceByName = async (name: string) => {
-    console.log(apiKey)
-    const $host1 = axios.create({
-        baseURL: URL
-    })
-    let resp = await axios.get(URL + "ru/places/geoname?name=" + name + "&country=RU&apikey=" + API_KEY)
+    let resp = await axios.get(URL + "geoname?name=" + name + "&apikey=" + API_KEY)
+    console.log(resp)
+}
+export const getPlacesByRadius = async (radius: number, lon: number, lat: number) => {
+    let resp = await axios.get(URL + "radius?radius=" + radius + "&lon=" + lon + "&lat=" + lat + "&apikey=" + API_KEY)
+    console.log(resp)
+}
+export const getPlaceInfoById = async (xid: string) => {
+    xid = "R4682064"
+    let resp = await axios.get(URL + "xid/" + xid + "?apikey=" + API_KEY)
     console.log(resp)
 }
