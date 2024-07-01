@@ -31,10 +31,7 @@ function SearchPage() {
                 </div>
                 
             </div>
-            <div className="flex flex-row md:flex-col items-end md:items-start justify-between">
-                <RadiusBar/>
-                <SearchButton/>
-            </div>
+            <SearchButton/>
         </div>
     );
 }

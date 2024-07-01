@@ -1,11 +1,16 @@
 import noteImg from "@assets/Note.svg"
 import arrowImg from "@assets/Arrow.svg"
 import { Link } from "react-router-dom";
+import { getPlaceInfoById } from "@//utils/http/MapAPI";
 
 const Note = () => {
+  const getInfo = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault()
+    await getPlaceInfoById("Q28381640")
+}
   return (
     <div className=" flex flex-col h-[231px] max-w-[350px] border-[3px] rounded-[10px] mb-[20px] p-[20px] border-grey">
-      <Link to={"/place"}>
+      <Link to={"/place"} onClick={getInfo}>
         <div className="flex sm:items-center flex-col sm:flex-row">
             <div className="h-[99px] sm:w-[120px] rounded-[10px] bg-dark-grey"/>
             
@@ -20,7 +25,7 @@ const Note = () => {
       </Link>
         <div className="flex items-center justify-between mt-[10px] sm:mt-[20px]">
             <img src={noteImg} alt="" className="h-[20px] w-[15px]"/>
-            <Link to={"/place"}>
+            <Link to={"/place"} onClick={getInfo}>
               <img src={arrowImg}/>
             </Link>
         </div>
