@@ -1,9 +1,9 @@
 import tagImg from "@tags/nature.svg"
 import { tagList } from "@//constants/TagList";
 import { locationMarker } from '@//components/MapComp/MapIcons/PlaceMarker';
-import PlaceModal from '@map/MapAttributes/PlaceModal';
 import {Marker, Popup } from 'react-leaflet'
 import { useEffect, useState } from "react";
+import PlaceModal from "../MapAttributes/PlaceModal";
 
 const Place = (props: any) => {
     const[img, setImg] = useState<string>(tagImg)
@@ -21,7 +21,7 @@ const Place = (props: any) => {
   return (
     <Marker position={[props.item.geometry.coordinates[1],props.item.geometry.coordinates[0]]} icon={locationMarker(img)}>
       <Popup>
-        <PlaceModal/>
+        <PlaceModal props = {props.item}/>
       </Popup>
     </Marker>
   );

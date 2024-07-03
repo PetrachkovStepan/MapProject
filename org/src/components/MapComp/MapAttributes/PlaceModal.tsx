@@ -1,27 +1,37 @@
 import noteImg from "@assets/Note.svg"
 import arrowImg from "@assets/Arrow.svg"
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { getPlaceInfoById } from "@//utils/http/MapAPI";
+import { useDispatch } from "react-redux";
+import { SET_PLACE } from "@//store/placeReduser";
 
 
-function PlaceModal() {
+function PlaceModal(props: any) {
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch()
+
+  const getInfo = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault()
+    // await getPlaceInfoById(props.props.properties.xid)
+    // let info =  await getPlaceInfoById(props.props.properties.xid)
+    // console.log("info");
+    // console.log(info);
+    
+    dispatch({type: SET_PLACE, item: await getPlaceInfoById(props.props.properties.xid)})
+    navigate("/place")
+}
     return (
-        <div className=" flex flex-col h-[231px] max-w-[350px] border-[3px] rounded-[10px] mb-[20px] p-[20px] border-grey">
-        <Link to={"/place"}>
-          <div className="flex sm:items-center flex-col sm:flex-row">
-              <div className="h-[99px] sm:w-[120px] rounded-[10px] bg-dark-grey"/>
-              <div className="flex items-center mt-[10px] sm:w-[160px]">
-                <div className="h-[50px] sm:ml-[16px] text-[14] text-dark-grey sm:text-[16px] flex flex-wrap text-clip">Нереальнейший городской парк</div>
-              </div>
+        <div className=" flex flex-row w-[200px] border-[3px] rounded-[10px] my-[20px] py-[5px] border-grey">
+          
+          <div className="flex items-center mt-[10px] w-[160px]" >
+            <button className=" sm:ml-[16px] text-[14] text-dark-grey sm:text-[16px] flex flex-wrap text-clip" 
+              onClick={getInfo}>{props.props.properties.name}</button>
           </div>
-          <div className="flex items-center sm:mt-[10px]">
-              <div className=" h-[0px] sm:h-[42px] text-[10px] text-dark-grey flex flex-wrap text-clip overflow-hidden ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-          </div>
-        </Link>
-          <div className="flex items-center justify-between mt-[10px] sm:mt-[20px]">
+
+          <div className="flex flex-col items-center justify-between mt-[10px] sm:mt-[20px]">
               <img src={noteImg} alt="" className="h-[20px] w-[15px]"/>
-              <Link to={"/place"}>
-                <img src={arrowImg}/>
-              </Link>
+                <img src={arrowImg} onClick={getInfo}/>
           </div>
       </div>
     );

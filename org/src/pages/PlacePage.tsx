@@ -3,17 +3,31 @@ import BackToNoteButton from "@sidebuttons/BackToNoteButton";
 import SaveButton from "@sidebuttons/SaveButton";
 import RouteButton from "@sidebuttons/RouteButton";
 import testImg from "@assets/TestImage.png"
+import { useTypeSelector } from "../hooks/useTypeSelector";
+import { useEffect, useState } from "react";
 
 function PlacePage() {
+    const state = useTypeSelector(state => state.place)
+    const [text, setText] = useState("Нет информации")
+    const [img, setImg] = useState(testImg)
+    useEffect(() => {
+        if(state.item.wikipedia_extracts != undefined){
+            setText(state.item.wikipedia_extracts.text)
+        }
+        if(state.item.preview == undefined){
+            setImg(testImg)
+        }
+      });
+    
     return (
         <div  className = "h-screen max-w-[490px] bg-white flex flex-col px-[22px] pt-[25px]">
             <SearchBar/>
             <BackToNoteButton/>
             <div className = " overflow-auto no-scrollbar mt-[10px] ">
                 <div className="flex flex-col border-[3px] border-grey rounded-[10px] px-[20px] pt-[20px]">
-                    <img src={testImg} className=" rounded-[10px] bg-dark-grey"/>
-                    <div className="text-[20px] flex flex-wrap">Нереальнейший городской парк</div>                
-                    <div className=" text-[12px] mt-[10px] flex flex-wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                    <img src={img} alt={testImg} className=" rounded-[10px] bg-dark-grey"/>
+                    <div className="text-[20px] flex flex-wrap">{state.item.name}</div>                
+                    <div className=" text-[12px] mt-[10px] flex flex-wrap">{text}</div>
                     
                     <div className="flex justify-between mt-[25px] sm:mt-[50px] mb-[15px] sm:mb-[25px]">
                         <SaveButton/>

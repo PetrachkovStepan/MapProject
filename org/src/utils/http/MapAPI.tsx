@@ -15,5 +15,6 @@ export const getPlacesByRadius = async (radius: number, lon: number | undefined,
 }
 export const getPlaceInfoById = async (xid: string) => {
     const resp = await axios.get(URL + "xid/" + xid + "?apikey=" + API_KEY)
-    console.log(resp)
+    console.log(resp.data)
+    return resp.data
 }

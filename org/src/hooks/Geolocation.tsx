@@ -1,22 +1,38 @@
-import { useEffect, useState } from "react";
+import React, { useEffect } from 'react';
+import { useMap } from 'react-leaflet';
+import L from 'leaflet';
 
-export const useGeolocation = () => {
-    const [position, setPosition] = useState<GeolocationCoordinates | undefined>()
-    const [error, setError] = useState<string>();
+export interface UserLocation {
+    lat: number;
+    lng: number;
+  }
+  
+  export interface LocateUserProps {
+    setUserLocation: (position: UserLocation) => void;
+  }
 
-    useEffect(() => {
-        const geo = navigator.geolocation;
-        if(!geo){
-            setError("Location data is not available");
-        }
-        const watcher = geo.watchPosition((e) => {
-            setPosition(e.coords)
-        }, (e) => setError(e.message));
-        return () =>geo.clearWatch(watcher);
-    }, [setPosition, setError]);
+const LocateUser: React.FC<LocateUserProps> = ({ setUserLocation }) => {
+  const map = useMap();
 
-    return {
-        position,
-        error
-    }
-}
+  useEffect(() => {
+    map
+      .locate({
+        setView: true,
+        maxZoom: 16,
+        enableHighAccuracy: true,
+      })
+      .on('locationfound', (e: L.LocationEvent) => {
+        const { lat, lng } = e.latlng;
+        setUserLocation({ lat, lng });
+        map.setView(e.latlng, 13);
+        L.marker(e.latlng).addTo(map).bindPopup('You are here').openPopup();
+      })
+      .on('locationerror', (err) => {
+        console.error('Location error:', err.message);
+      });
+  }, [map, setUserLocation]);
+
+  return null;
+};
+
+export default LocateUser;

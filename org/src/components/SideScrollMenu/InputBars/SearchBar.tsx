@@ -10,15 +10,18 @@ function SearchBar() {
     const [searchLine, setSearchLine] = useState("")
     const [position, setPosition] = useState<GeolocationCoordinates | undefined>()
     useEffect(() => {
-        navigator.geolocation.watchPosition((e) => {
-            setPosition(e.coords)
-        })
-        console.log("position");
-        console.log(position);
-      });
-    
+        if(position == undefined){
+            navigator.geolocation.watchPosition((e) => {
+                setPosition(e.coords)
+                console.log(e.coords);
+                console.log(position);
+                 })
+        }
+      },[]);
     const search = async (e: { preventDefault: () => void; }) => {
-        e.preventDefault()        
+        e.preventDefault()
+        console.log("position");
+        console.log(position); 
         dispatch({type: SET_ITEMS, items: await getPlaceByName(searchLine, position?.longitude, position?.latitude)})
     }
     return (

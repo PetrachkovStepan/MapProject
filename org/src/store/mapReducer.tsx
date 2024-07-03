@@ -1,4 +1,4 @@
-import { MapItemInfo, MapItems, MapAction } from "./types";
+import { MapItems, MapAction } from "./types";
 
 export const SET_ITEMS = "SET_ITEMS";
 

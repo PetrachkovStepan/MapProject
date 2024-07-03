@@ -1,12 +1,13 @@
 import { userMarker } from '@map/MapIcons/UserMarker';
 
-import { LatLng } from 'leaflet';
+import L, { LatLng } from 'leaflet';
 import { useEffect, useState } from 'react';
 import { MapContainer, Marker, Popup, useMapEvents } from 'react-leaflet'
 import { TileLayer } from 'react-leaflet'
 import PlaceList from './Lists/PlaceList';
 import { useTypeSelector } from '@//hooks/useTypeSelector';
-import { MapItemInfo, MapItems } from '@//store/types';
+import { MapItemInfo } from '@//store/types';
+import { RoutingMachine } from './RoutingMachine';
 
 
 function LocationMarker() {
@@ -40,8 +41,9 @@ function MapComp() {
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-      <LocationMarker/>
       <PlaceList items={places}/>
+      <LocationMarker/>
+      <RoutingMachine/>
     </MapContainer>
     </div>
   );

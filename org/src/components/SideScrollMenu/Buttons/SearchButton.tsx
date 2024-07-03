@@ -1,20 +1,22 @@
 import searchImg from "@assets/SearchImg.svg"
 import { getPlacesByRadius } from "@//utils/http/MapAPI";
 import { useDispatch } from "react-redux";
-import { useTypeSelector } from "@//hooks/useTypeSelector";
 import { SET_ITEMS } from "@//store/mapReducer";
 import { useEffect, useState } from "react";
 
 function SearchButton() {
     const dispatch = useDispatch()
-    const state = useTypeSelector(state => state.map)
     const [position, setPosition] = useState<GeolocationCoordinates | undefined>()
     const [radius, setRadius] = useState(0)
     
     useEffect(() => {
-        navigator.geolocation.watchPosition((e) => {
-            setPosition(e.coords)
-        })
+        if(position == undefined){
+            navigator.geolocation.watchPosition((e) => {
+                setPosition(e.coords)
+                console.log(e.coords);
+                console.log(position);
+                 })
+        }
       });
 
     const search = async (e: { preventDefault: () => void; }) => {
