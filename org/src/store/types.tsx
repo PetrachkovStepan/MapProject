@@ -2,7 +2,10 @@ export interface UsersState{
     userName: string,
     userPassword: string,
     userId: string,
-    userPosition: number[]
+    userPosition: [{
+      lat: number,
+      lng: number
+  }],
     userNotes: any[],
   }
   export  interface UsersAction{

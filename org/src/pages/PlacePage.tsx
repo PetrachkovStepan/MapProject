@@ -14,8 +14,8 @@ function PlacePage() {
         if(state.item.wikipedia_extracts != undefined){
             setText(state.item.wikipedia_extracts.text)
         }
-        if(state.item.preview == undefined){
-            setImg(testImg)
+        if(state.item.preview != undefined){
+            setImg(state.item.preview.source)
         }
       });
     

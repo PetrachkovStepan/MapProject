@@ -3,25 +3,16 @@ import { getPlacesByRadius } from "@//utils/http/MapAPI";
 import { useDispatch } from "react-redux";
 import { SET_ITEMS } from "@//store/mapReducer";
 import { useEffect, useState } from "react";
+import { useTypeSelector } from "@//hooks/useTypeSelector";
 
 function SearchButton() {
     const dispatch = useDispatch()
-    const [position, setPosition] = useState<GeolocationCoordinates | undefined>()
+    const state = useTypeSelector(state => state.user)
     const [radius, setRadius] = useState(0)
-    
-    useEffect(() => {
-        if(position == undefined){
-            navigator.geolocation.watchPosition((e) => {
-                setPosition(e.coords)
-                console.log(e.coords);
-                console.log(position);
-                 })
-        }
-      });
 
     const search = async (e: { preventDefault: () => void; }) => {
         e.preventDefault()
-        dispatch({type: SET_ITEMS, items: await getPlacesByRadius(radius, position?.longitude, position?.latitude)})
+        dispatch({type: SET_ITEMS, items: await getPlacesByRadius(radius, state.userPosition[0].lng, state.userPosition[0].lat)})
     }
     return (
         <div className="flex flex-row md:flex-col items-end md:items-start justify-between">

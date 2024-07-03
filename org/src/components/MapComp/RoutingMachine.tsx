@@ -16,7 +16,6 @@ const createRoutineMachineLayer = () => {
     show: false,
     addWaypoints: false,
     routeWhileDragging: true,
-    //draggableWaypoints: true,
     fitSelectedRoutes: true,
     showAlternatives: false
   });

@@ -10,7 +10,10 @@ const defaultState: UsersState = {
     userName: "1",
     userPassword: "1",
     userId: "LpAHd6skJpBVCPcJ4DVX",
-    userPosition: [],
+    userPosition: [{
+      lat: 0,
+      lng: 0,
+    }],
     userNotes: [],
   }
   

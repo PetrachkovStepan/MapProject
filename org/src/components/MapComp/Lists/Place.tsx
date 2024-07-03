@@ -1,5 +1,5 @@
 import tagImg from "@tags/nature.svg"
-import { tagList } from "@//constants/TagList";
+import { tagList } from "@//constants/TagListConst";
 import { locationMarker } from '@//components/MapComp/MapIcons/PlaceMarker';
 import {Marker, Popup } from 'react-leaflet'
 import { useEffect, useState } from "react";
