@@ -7,12 +7,19 @@ import { DocumentData, QuerySnapshot, onSnapshot } from "firebase/firestore";
 import { notesCollection } from "../utils/Firebase/Controller";
 import { NoteType } from "../store/types";
 import NoteList from "../components/SideScrollMenu/Lists/NoteList";
+import { useNavigate } from "react-router";
 
 
 function NotesPage() {
+    const navigate = useNavigate(); 
     const [notes, setNotes] = useState<NoteType[]>([])
     const state = useTypeSelector(state => state.user)
     const dispatch = useDispatch()
+    useEffect(()=>{
+        if(localStorage.isLogIn == "false"){
+            navigate("/auth")
+        }
+    },[])
     useEffect(() => onSnapshot(notesCollection, (snapshot: 
         QuerySnapshot<DocumentData>) => {
         setNotes(

@@ -32,7 +32,7 @@ export const usersCollection = collection(firestore, 'users')
 
 //REGISTRATION
 
-export const registrateUser = async (login: string, password: string ) => {
+export const registrate = async (login: string, password: string ) => {
     const newUser = await addDoc(usersCollection, {
         password: password,
         login: login,

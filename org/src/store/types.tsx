@@ -1,6 +1,11 @@
+export interface UserFB{
+  id?: string,
+  login?: string,
+  password?: string,
+  userId?: string,
+}
 export interface UsersState{
     userName: string,
-    userPassword: string,
     userId: string,
     userPosition: [{
       lat: number,

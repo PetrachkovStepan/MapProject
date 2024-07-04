@@ -46,7 +46,7 @@ function MapComp() {
   return (
     <div className = " h-screen w-full bg-white border-l-[3px] border-grey">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
-    <MapContainer center={[53.8563323, 30.3478746]} zoom={7}  className='h-screen w-[100%] overflow-hidden fixed'>
+    <MapContainer center={[53.8563323, 30.3478746]} zoom={10}  className='h-screen w-[100%] overflow-hidden fixed'>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
