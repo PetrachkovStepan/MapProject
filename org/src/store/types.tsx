@@ -17,6 +17,15 @@ export interface UsersState{
     type: string,
     userInfo: any,
   }
+  
+export interface RouteState{
+  isRoute: boolean,
+}
+export  interface RouteAction{
+  type: string,
+  routeInfo: any,
+}
+
   export interface MapItems{
     items: MapItemInfo[],
   }

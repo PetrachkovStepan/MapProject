@@ -8,7 +8,6 @@ import testImg from "@assets/TestImage.png"
 import { SET_PLACE } from "@//store/placeReduser";
 import { NoteType, PlaceInfo } from "@//store/types";
 import { useTypeSelector } from "@//hooks/useTypeSelector";
-import { Button } from "@pbe/react-yandex-maps";
 
 const Note = (props: any) => {
   const state = useTypeSelector(state => state.place)

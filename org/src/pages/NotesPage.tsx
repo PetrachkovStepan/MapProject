@@ -7,6 +7,7 @@ import { notesCollection } from "../utils/Firebase/Controller";
 import { NoteType, UserFB } from "../store/types";
 import NoteList from "../components/SideScrollMenu/Lists/NoteList";
 import { useNavigate } from "react-router";
+import { SET_USER_NOTES } from "../store/userReducer";
 
 
 function NotesPage() {

@@ -20,13 +20,14 @@ function LocationMarker() {
   const map = useMapEvents({
     click() {
       map.locate()
-    },
-    locationfound(e) {
+    },locationfound(e) {
       setPosition(e.latlng)
       buffer.userPosition = [e.latlng]
       dispatch({type: SET_USER_POSITION, userInfo:[e.latlng]})
       console.log("state.userPosition");
       console.log(state.userPosition);
+      localStorage.setItem("userLat", state.userPosition[0].lat.toString())
+      localStorage.setItem("userLng", state.userPosition[0].lng.toString())
       map.flyTo(e.latlng, 17)
     },
   })
@@ -38,6 +39,7 @@ function LocationMarker() {
 
 function MapComp() {
   const state = useTypeSelector(state => state.map)
+  const routeState = useTypeSelector(state => state.route)
   const [places, setPlases] = useState<MapItemInfo[]>([])
   useEffect(() => {
     setPlases(state.items)
@@ -52,7 +54,11 @@ function MapComp() {
           url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
       <LocationMarker/>
       <PlaceList items={places}/>
-      <RoutingMachine/>
+      {(routeState.isRoute == true)?
+        <RoutingMachine/>
+       :
+       <div/>
+      }
     </MapContainer>
     </div>
   );

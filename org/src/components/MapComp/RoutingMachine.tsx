@@ -6,8 +6,8 @@ import { useTypeSelector } from "@//hooks/useTypeSelector";
 const createRoutineMachineLayer = () => {
   const instance = L.Routing.control({
     waypoints: [
-      L.latLng(53.9258995, 27.5981312),
-      L.latLng(53.9220314, 27.5922756)
+      L.latLng(Number.parseFloat(localStorage.userLat), Number.parseFloat(localStorage.userLng)),
+      L.latLng(Number.parseFloat(localStorage.destLat), Number.parseFloat(localStorage.destLng))
     ],
     lineOptions: {
       styles: [{ color: "#6FA1EC", weight: 4 }],

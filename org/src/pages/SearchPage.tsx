@@ -13,7 +13,6 @@ function SearchPage() {
                         <TagList></TagList>
                     </div>
                 </div>
-                
             </div>
             <SearchButton/>
         </div>

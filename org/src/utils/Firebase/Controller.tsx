@@ -21,8 +21,8 @@ export const addNote = async (xid: string, user_id: string ) => {
 
 //DELETE THE NOTE BY ID
 
-export const deleteNote = async (id: string) => {
-    const document = doc(firestore, "notes/" + {id})
+export const deleteNote = async (id: string | undefined) => {
+    const document = doc(firestore, "notes/" + id)
     await deleteDoc(document)
 }
 
