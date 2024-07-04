@@ -1,4 +1,5 @@
 import tagImg from "@tags/nature.svg"
+import { useEffect } from "react";
 
 const Tag = (props: any) => {
   const changeOnSearch = () => {
@@ -8,7 +9,7 @@ const Tag = (props: any) => {
   return (
     <button className=" flex flex-row w-full items-center mb-[10px]"
       onClick={changeOnSearch}>
-        <img src={props.item.image} alt="" className="h-[30px] w-[30px]"/>
+        <img src={props.item.image} alt="" className="h-[30px] w-[30px] bg-opacity-[50%]"/>
         <div className="text-dark-grey text-[16px] mx-[20px] text-clip overflow-hidden ">{props.item.name}</div>
     </button>
   );
