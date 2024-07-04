@@ -5,7 +5,7 @@ import noteImg from "@assets/Note.svg"
 function SaveButton() {
     const state = useTypeSelector(state => state.place)
     const addNewNote = async () =>{
-        addNote(state.item.xid, "LpAHd6skJpBVCPcJ4DVX")
+        addNote(state.item.xid, localStorage.userId)
     }
     return (
         <button className=" flex justify-between items-center h-[40px] sm:w-[154px] rounded-[6px] border-[3px] px-[25px] border-grey"

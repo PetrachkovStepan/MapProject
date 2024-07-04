@@ -1,5 +1,4 @@
 import Tag from "./Tag";
-import { TagListInter } from "@//constants/TagListConst";
 import { tagList } from "@//constants/TagListConst";
 
 const TagList = () => {
