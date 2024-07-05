@@ -4,17 +4,14 @@ import { useTypeSelector } from "../hooks/useTypeSelector";
 import { useEffect, useState } from "react";
 import { DocumentData, QuerySnapshot, onSnapshot } from "firebase/firestore";
 import { notesCollection } from "../utils/Firebase/Controller";
-import { NoteType, UserFB } from "../store/types";
+import { NoteType } from "../store/types";
 import NoteList from "../components/SideScrollMenu/Lists/NoteList";
 import { useNavigate } from "react-router";
-import { SET_USER_NOTES } from "../store/userReducer";
 
 
 function NotesPage() {
     const navigate = useNavigate(); 
     const [notes, setNotes] = useState<NoteType[]>([])
-    const state = useTypeSelector(state => state.user)
-    const dispatch = useDispatch()
     useEffect(()=>{
         if(localStorage.isLogIn == "false"){
             navigate("/auth")
@@ -43,7 +40,7 @@ console.log(notes);
     return (
         <div  className = "h-screen bg-white flex flex-col px-[25px] pt-[25px]">
             <SearchBar/>
-            <div className="mt-[30px] text-[20px] text-dark-grey">Избранное</div>
+            <div className="mt-[30px] text-[20px] text-dark-grey font-mono font-bold">Избранное</div>
             <div className="flex flex-col mt-[10px] overflow-auto no-scrollbar">
                 <NoteList items={filterNotes()}></NoteList>
             </div>

@@ -26,8 +26,8 @@ function PlacePage() {
             <div className = " overflow-auto no-scrollbar mt-[10px] ">
                 <div className="flex flex-col border-[3px] border-grey rounded-[10px] px-[20px] pt-[20px]">
                     <img src={img} alt={testImg} className=" rounded-[10px] bg-dark-grey"/>
-                    <div className="text-[20px] flex flex-wrap">{state.item.name}</div>                
-                    <div className=" text-[12px] mt-[10px] flex flex-wrap">{text}</div>
+                    <div className="text-[20px] flex flex-wrap font-mono font-bold ">{state.item.name}</div>                
+                    <div className=" text-[12px] mt-[10px] flex flex-wrap font-mono ">{text}</div>
                     
                     <div className="flex justify-between mt-[25px] sm:mt-[50px] mb-[15px] sm:mb-[25px]">
                         <SaveButton/>

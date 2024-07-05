@@ -19,7 +19,7 @@ function PlaceModal(props: any) {
         <div className=" flex flex-row w-[200px] border-[3px] rounded-[10px] my-[20px] py-[5px] border-grey">
           
           <div className="flex items-center my-[10px] w-[160px] justify-between" >
-            <button className=" sm:ml-[16px] text-[14px] text-dark-grey sm:text-[16px] flex flex-wrap text-clip" 
+            <button className=" sm:ml-[16px] text-[14px] text-dark-grey sm:text-[16px] flex flex-wrap text-clip font-mono" 
               onClick={getInfo}>{props.props.properties.name}</button>
             <img src={arrowImg} onClick={getInfo} className="ml-10"/>
           </div>

@@ -20,7 +20,7 @@ function SearchBar() {
         <div  className = " flex items-center pl-[30px] pr-[40px] h-[60px]  rounded-[6px] border-[3px] border-grey">
             <img src={searchImg} alt="" className=" h-[22px] w-[22px]"
                 onClick={search}/>
-            <input className=" text-[16px] ml-[20px] outline-none h-full w-full"
+            <input className=" text-[16px] ml-[20px] outline-none h-full w-full  font-mono"
                 placeholder="Место, адрес.."
                 onChange={(e) => {setSearchLine(e.target.value)}} 
                 value={searchLine}>

@@ -34,3 +34,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.font-mont {
+    font-family: 'Montserrat';
+  }

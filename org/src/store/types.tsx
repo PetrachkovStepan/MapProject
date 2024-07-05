@@ -12,11 +12,11 @@ export interface UsersState{
       lng: number
   }],
     userNotes: any[],
-  }
-  export  interface UsersAction{
+}
+export  interface UsersAction{
     type: string,
     userInfo: any,
-  }
+}
   
 export interface RouteState{
   isRoute: boolean,
@@ -26,10 +26,10 @@ export  interface RouteAction{
   routeInfo: any,
 }
 
-  export interface MapItems{
+export interface MapItems{
     items: MapItemInfo[],
-  }
-  export  interface MapItemInfo{
+}
+export  interface MapItemInfo{
     id: string,
     geometry: {
         type: string,

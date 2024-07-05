@@ -24,7 +24,7 @@ function Layout() {
           {hidden?
             <Outlet/>
             :
-            <div/>
+            null
           }
           <button
             onClick={hideUnhide}>

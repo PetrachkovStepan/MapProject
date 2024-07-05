@@ -6,9 +6,7 @@ export function App() {
     localStorage.setItem("isRoute", "false") 
   },[]);
   return (
-    <div>
-      <Layout></Layout>
-    </div>
+    <Layout/>
   );
 }
 

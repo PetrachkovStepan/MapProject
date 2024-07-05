@@ -1,10 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import mappieLogo from "@assets/Mappie.svg"
 import { useEffect, useState } from "react";
 import { logInUser, registrateUser } from "../utils/UserAccount/UserAccount";
 import { onSnapshot, QuerySnapshot, DocumentData } from "firebase/firestore";
 import { usersCollection } from "../utils/Firebase/Controller";
-import { UserFB, UsersState } from "../store/types";
+import { UserFB } from "../store/types";
 
 function AuthPage() {
   const navigate = useNavigate();  

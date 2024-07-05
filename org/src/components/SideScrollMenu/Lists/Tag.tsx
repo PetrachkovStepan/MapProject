@@ -15,8 +15,8 @@ const Tag = (props: any) => {
   return (
     <button className=" flex flex-row w-full items-center mb-[10px]"
       onClick={changeOnSearch}>
-        <img src={img} alt="" className="h-[30px] w-[30px] bg-opacity-[50%]"/>
-        <div className="text-dark-grey text-[16px] mx-[20px] text-clip overflow-hidden ">{props.item.name}</div>
+        <img src={img} alt="" className="h-[30px] w-[30px]"/>
+        <div className="text-dark-grey text-[16px] mx-[20px] text-clip overflow-hidden  font-mono font-bold">{props.item.name}</div>
     </button>
   );
 };

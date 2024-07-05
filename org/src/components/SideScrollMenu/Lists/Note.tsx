@@ -39,15 +39,12 @@ const toThePlacePage = async () => {
     <div className=" flex flex-col h-[231px] max-w-[350px] border-[3px] rounded-[10px] mb-[20px] p-[20px] border-grey">
       <button onClick={toThePlacePage}>
         <div className="flex sm:items-center flex-col sm:flex-row">
-            <img src={img} alt={testImg} className="h-[99px] sm:w-[120px] rounded-[10px] bg-dark-grey"/>
-            
-            <div className="flex items-center mt-[10px] sm:w-[160px]">
-              <div className="h-[50px] sm:ml-[16px] text-[14] text-dark-grey sm:text-[16px] flex flex-wrap text-clip overflow-hidden">{name}</div>
-            </div>
-
+            <img src={img} alt={testImg} className="h-[99px] w-[120px] rounded-[10px] bg-dark-grey"/>
+            <div className=" flex flex-wrap h-[50px] mt-[10px]  sm:ml-[16px] text-[14] text-dark-grey sm:text-[16px] font-mono font-bold text-clip overflow-hidden"
+              >{name}</div>
         </div>
         <div className="flex items-center sm:mt-[10px]">
-            <div className=" h-[0px] sm:h-[42px] text-[10px] text-dark-grey flex flex-wrap text-clip overflow-hidden ">{text}</div>
+            <div className=" h-[0px] sm:h-[42px] text-[10px] text-dark-grey flex flex-wrap font-mono text-clip overflow-hidden ">{text}</div>
         </div>
       </button>
         <div className="flex items-center justify-between mt-[10px] sm:mt-[20px]">
