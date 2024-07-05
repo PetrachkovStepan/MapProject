@@ -1,3 +1,4 @@
+//USER
 export interface UserFB{
   id?: string,
   login?: string,
@@ -17,7 +18,7 @@ export  interface UsersAction{
     type: string,
     userInfo: any,
 }
-  
+//ROUTE
 export interface RouteState{
   isRoute: boolean,
 }
@@ -25,7 +26,7 @@ export  interface RouteAction{
   type: string,
   routeInfo: any,
 }
-
+//MAP
 export interface MapItems{
     items: MapItemInfo[],
 }
@@ -51,7 +52,7 @@ export  interface MapAction{
   type: string,
   items: MapItemInfo[],
 }
-
+//PLACE
 export  interface PlaceAction{
   type: string,
   item: PlaceInfo,
@@ -87,6 +88,7 @@ export  interface PlaceInfo{
       lat: number,
     }
 }
+//NOTE
 export interface NoteItems{
   items: NoteType[]
 }
